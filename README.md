@@ -1,6 +1,6 @@
 # TextWithImage
 
-
+[![](https://jitpack.io/v/joelnah/TextWithImage.svg)](https://jitpack.io/#joelnah/TextWithImage)
 ### Setting
 
 ```kotlin
