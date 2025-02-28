@@ -45,7 +45,7 @@ fun Greeting( modifier: Modifier = Modifier) {
         verticalArrangement = Arrangement.Center
     ) {
         TextWithImage(
-            text = "텍스트 뒤에붙습니다. ",
+            text = "텍스트 뒤에 붙습니다. ",
         ){ fontSize ->
             Image(
                 painter = painterResource(id = R.drawable.ic_launcher_foreground),

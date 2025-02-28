@@ -2,6 +2,7 @@ plugins {
     alias(libs.plugins.android.library)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+    id("maven-publish")
 }
 
 android {
@@ -52,4 +53,17 @@ dependencies {
     androidTestImplementation(platform(libs.androidx.compose.bom))
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
+}
+
+publishing {
+    publications {
+        afterEvaluate {
+            register<MavenPublication>("release") {
+                from(components["release"])
+                groupId = "com.github.joelnah"
+                artifactId = "TextWithImage"
+                version = JavaVersion.VERSION_11.name
+            }
+        }
+    }
 }

@@ -1,6 +1,5 @@
 # TextWithImage
 
-[![](https://jitpack.io/v/joelnah/NahUtils.svg)](https://jitpack.io/#joelnah/NahUtils)
 
 ### Setting
 
